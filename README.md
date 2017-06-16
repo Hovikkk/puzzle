@@ -1,2 +1,3 @@
 # puzzle
-puzzle game mobile
+puzzle game mobile,
+Open the visual studio game.sln file
