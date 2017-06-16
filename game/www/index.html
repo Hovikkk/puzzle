@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html ng-app="myapp">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    
+    <link href="css/app.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+</head>
+<body>
+    <!--<div class="bar bar-header bar-assertive" ng-controller="errorCtrl" ng-show="activeError" style="z-index: 1000">
+        <h1 class="title">Error: {{error}}</h1>
+        <button class="button icon ion-close-round" ng-click="dismissError()"></button>
+    </div>-->
+    <ion-nav-view class="ionBlock"></ion-nav-view>
+    <!--<div class="row soundPlayIcon" ng-click="musicOffOpen()" ng-show="music"></div>-->
+    <div class="row" > <!--ng-show="!music"--> 
+       <!-- <div style="background-color:red; width:7vw; height: 7vw; position:absolute; bottom: 14vw; z-index: 10000000; bottom: 19vw; right: 8vw;"></div> -->
+        <sound-track file="sounds/muzic.mp3" ng-click="togglePlay()" class="soundPlay"></sound-track>
+    </div>
+    <div ng-click="buttonSound()" class="soundButton" ng-show="soundButton"></div>
+    <div ng-click="buttonSound()" class="soundButtonOff" ng-show="!soundButton"></div>
+    <div class="loadingSpiner" ng-show="loadingShow">
+        <img src="images/logo.png" class="loadingLogo"/>
+    </div>
+    <!--<div class="spinner">
+        <ion-spinner icon="android" class="spinnerSpinner"></ion-spinner>
+        <div class="spinnerBackground"></div>
+    </div>-->
+
+    <!-- Other Library/Framework references -->
+    <script src="scripts/jquery-2.1.4.min.js"></script>
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- Cordova references -->
+    <script src="scripts/ng-cordova.min.js"></script>
+    <script src="cordova.js"></script>
+    <script src="scripts/platformOverrides.js"></script>
+
+    <!-- App references -->
+    <script src="scripts/index.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/services.js"></script>
+    <script src="app/controllers.js"></script>
+    
+    <script src="app/defImgOrMyImgControllers.js"></script>
+    <script src="app/myImgControllers.js"></script>
+    <script src="app/complexityControllers.js"></script>
+    <script src="app/levelControllers.js"></script>
+    <script src="app/normalLevelControllers.js"></script>
+    <script src="app/normalPlayControllers.js"></script>
+    <script src="app/hardLevelControllers.js"></script>
+    <script src="app/hardPlayControllers.js"></script>
+    <script src="app/playControllers.js"></script>
+    <script src="app/rulesControllers.js"></script>
+    <script src="app/setingsControllers.js"></script>
+    <script src="app/soundTrack.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+﻿<ion-view view-title="Play" data-ng-init="init()" hide-nav-bar="true" can-swipe-back="false">
+    <ion-content class="padding" scroll="false">
+        <div class="preview" ng-show="previewImg" ng-if="imagePlay">
+            <div class="row">
+                <img src="images/logo.png" class="logo" alt="logo">
+            </div>
+            <div class="importantImgPreDiv">
+                <img src="{{preview}}" alt="preview" class="importantImgPre" />
+            </div>
+            <span class="textTimerPre">00:0{{count}}</span>
+        </div>
+        <div class="good" ng-show="goodDiv">
+            <div class="row">
+                <img src="images/logo.png" class="logo" alt="logo">
+            </div>
+            <h1>YOU WIN</h1>
+            <span class="congratulation">Congratulations</span>
+            <div class="row">
+                <img src="images/play/smile.png" class="smile" alt="smile">
+            </div>
+            <div class="row" style="width:10vw; height:10vw;background-color:red" ng-click="fbShare()">fb</div>
+            <div class="nextDiv" ng-click="next()">
+                <span>Next</span>
+            </div>
+            <div class="row back" id="back">
+                <a class="backButtton" ng-click="back()"></a>
+            </div>
+        </div>
+        <div class="good" ng-show="timeFin">
+            <div class="row">
+                <img src="images/logo.png" class="logo" alt="logo">
+            </div>
+            <h1>YOU LOSE</h1>
+            <img src="images/play/sad.png" class="sad" alt="sad">
+            <h1 class="timer0">TIMER: 0</h1>
+            <div class="nextDiv" ng-click="reloadGame()">
+                <span>Replay</span>
+            </div>
+            <div class="row back" id="back">
+                <a class="backButtton" ng-click="back()"></a>
+            </div>
+        </div>
+        <div class="specularNo" ng-show="specularNoDiv">
+            <h1>No specular image</h1>
+        </div>
+        <div class="container text-center" id="container">
+            <div class="row">
+                <img src="images/logo.png" class="logo" alt="logo">
+            </div>
+            
+            <div ng-if="imagePlay">
+                
+                <div class="row timerGame">
+                    <span>{{timerNormalStart}}</span>
+                </div>
+                <img src="{{one}}" alt="1" class="col-xs-4 image oneImgNorm" ng-click="oneImg()" />
+                <img src="{{two}}" alt="2" class="col-xs-4 image twoImgNorm" ng-click="twoImg()" />
+                <img src="{{three}}" alt="3" class="col-xs-4 image threeImgNorm" ng-click="threeImg()" /><br />
+                <img src="{{four}}" alt="4" class="col-xs-4 image fourImgNorm" ng-click="fourImg()" />
+                <img src="{{five}}" alt="5" class="col-xs-4 image fiveImgNorm" ng-click="fiveImg()" />
+                <img src="{{six}}" alt="6" class="col-xs-4 image sixImgNorm" ng-click="sixImg()" /><br />
+                <img src="{{seven}}" alt="7" class="col-xs-4 image sevenImgNorm" ng-click="sevenImg()" />
+                <img src="{{eight}}" alt="8" class="col-xs-4 image eightImgNorm" ng-click="eightImg()" />
+                <img src="{{nine}}" alt="9" class="col-xs-4 image nineImgNorm" ng-click="nineImg()" />
+                <div class="row">
+                    <div class="col-xs-6"><img src="images/play/Left-right.png" alt="specularButton" class="specular" ng-click="specular()" /></div>
+                    <div class="col-xs-6 showImg vcenter" ng-click="showImg()">Show image</div>
+                </div>
+                <div class="row back" id="back">
+                    <a class="backButtton" ng-click="back()"></a>
+                </div>
+            </div>
+            <div ng-if="!imagePlay">
+                <img src="{{picOriginal}}" id='orgImgNorm' width="300" height="300" ng-show="false" />
+                <div>
+                    <img src="{{one}}" id='newImg1' class="col-xs-4 image oneImgNorm" alt="1" ng-click="oneImg()" />
+                    <img src="{{two}}" id='newImg2' class="col-xs-4 image twoImgNorm" alt="2" ng-click="twoImg()" />
+                    <img src="{{three}}" id='newImg3' class="col-xs-4 image threeImgNorm" alt="3" ng-click="threeImg()" />
+                </div>
+                <div>
+                    <img src="{{four}}" id='newImg4' class="col-xs-4 image fourImgNorm" alt="4" ng-click="fourImg()" />
+                    <img src="{{five}}" id='newImg5' class="col-xs-4 image fiveImgNorm" alt="5" ng-click="fiveImg()" />
+                    <img src="{{six}}" id='newImg6' class="col-xs-4 image sixImgNorm" alt="6" ng-click="sixImg()" />
+                </div>
+                <div>
+                    <img src="{{seven}}" id='newImg7' class="col-xs-4 image sevenImgNorm" alt="7" ng-click="sevenImg()" />
+                    <img src="{{eight}}" id='newImg8' class="col-xs-4 image eightImgNorm" alt="8" ng-click="eightImg()" />
+                    <img src="{{nine}}" id='newImg9' class="col-xs-4 image nineImgNorm" alt="9" ng-click="nineImg()" />
+                </div>
+                <div class="row">
+                    <div class="col-xs-6"><img src="images/play/Left-right.png" alt="specularButton" class="specular" ng-click="specular()" /></div>
+                   <!-- <div class="col-xs-6 showImg vcenter" ng-click="showImg()">Show image</div> -->
+                </div>
+                <div class="row back" id="back">
+                    <a class="backButtton" ng-click="back()"></a>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

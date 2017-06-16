@@ -1,0 +1,31 @@
+﻿<ion-view view-title="Play" data-ng-init="init()" hide-nav-bar="true" can-swipe-back="false">
+    <ion-content class="" scroll="false">
+        <div class="container text-center" id="container">
+            <div class="row">
+                <img src="images/logo.png" class="logo" alt="logo">
+            </div>
+            <div class="vcenter complexityDiv" ng-click="easyComplexity()">
+                <span>Easy</span>
+                <img src="images/play/lock.png" class="lock" ng-if="!lockedE" />
+            </div>
+            <div class="vcenter complexityDiv complexityDivNH complexityDivN"  ng-click="normalComplexity()">
+                <div style="margin: 0 auto;">
+                    <span>Normal</span>
+                    <img src="images/play/lock.png" class="lock" ng-if="!lockedN" />
+                    <span ng-show="starShow" class="starCountText">{{myNormalStar}}/{{normalOpenComplexity}}</span>
+                </div>
+            </div>
+            <div class="vcenter complexityDiv complexityDivNH complexityDivH" ng-click="hardComplexity()">
+                <div style="margin: 0 auto;">
+                    <span>Hard</span>
+                    <img src="images/play/lock.png" class="lock lockHard" ng-if="!lockedH" />
+                    <span ng-show="starShow" class="starCountText">{{myHardStar}}/{{hardOpenComplexity}}</span>
+                </div>
+            </div>
+            
+            <div class="row back" id="back">
+                <a class="backButtton" ng-click="back()"></a>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

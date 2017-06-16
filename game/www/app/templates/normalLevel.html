@@ -1,0 +1,36 @@
+﻿<ion-view view-title="Play" data-ng-init="init()" hide-nav-bar="true" can-swipe-back="false">
+    <ion-content class="" scroll="false">
+        <div class="container text-center" id="containerLevel">
+            <div class="row">
+                <img src="images/logo.png" class="logo" alt="logo">
+            </div>
+            <div class="scrolDiv">
+                <div class="scrolDiv2">
+                    <ion-scroll zooming="false" direction="y" class="scrolSize">
+                        <div class="mainDivLevel textCenter">
+                            <!--display: inline-table;-->
+                            <div style="display:inline-block; height:21vw; width:21vw; margin:3vw 3.5vw" ng-repeat="num in arrNumberOrLockNormal">
+                                <div class="levelDiv" ng-class="{lockDiv: num.lock}" ng-click="levelPage(num.number)">
+                                    {{num.number}}
+                                    <img src="images/play/emptyStar.png" class="starLevel" style="margin-left:-8vw" ng-if="num.showNormalStar1 && !num.lock" />
+                                    <img src="images/play/emptyStar.png" class="starLevel" style="margin-left:-4vw" ng-if="num.showNormalStar2 && !num.lock" />
+                                    <img src="images/play/emptyStar.png" class="starLevel" style="margin-left:0vw" ng-if="num.showNormalStar3 && !num.lock" />
+                                    <img src="images/play/star.png" class="starLevel" style="margin-left:-8vw" ng-if="!num.showNormalStar1 && !num.lock" />
+                                    <img src="images/play/star.png" class="starLevel" style="margin-left:-4vw" ng-if="!num.showNormalStar2 && !num.lock" />
+                                    <img src="images/play/star.png" class="starLevel" style="margin-left:0vw" ng-if="!num.showNormalStar3 && !num.lock" />
+                                    <img src="images/play/lock.png" class="lockLevel" ng-if="num.lock" />
+                                </div>
+                            </div>
+                        </div>
+                    </ion-scroll>
+                </div>
+            </div>
+            <div class="row scrolIconDiv">
+                <img src="images/scroll.png" class="scrolIcon" />
+            </div>
+            <div class="row back" id="back">
+                <a class="backButtton" ng-click="back()"></a>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

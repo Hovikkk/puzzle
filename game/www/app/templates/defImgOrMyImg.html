@@ -1,0 +1,26 @@
+﻿<ion-view view-title="Play" data-ng-init="init()" hide-nav-bar="true" can-swipe-back="false">
+    <ion-content class="" scroll="false">
+        <div class="container text-center" id="container">
+            <div class="row">
+                <img src="images/logo.png" class="logo" alt="logo">
+            </div>
+            
+            <div class="row">
+                <div class="defOrMyDiv defButton vcenter" ng-click="default()">
+                    <p>Default</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="defOrMyDiv myButton vcenter" ng-click="myImage()">
+                    <p>My photo</p>
+                </div>
+            </div>
+            <div class="row back" id="back">
+                <a class="backButtton" ng-click="back()"></a>
+            </div>
+            <!--<div class="row">
+                <sound-track file="sounds/muzic.mp3" ng-click="togglePlay()" class="soundPlay"></sound-track>
+            </div>-->
+        </div>
+    </ion-content>
+</ion-view>

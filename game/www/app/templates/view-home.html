@@ -1,0 +1,48 @@
+﻿<ion-view view-title="Home" hide-nav-bar="true" can-swipe-back="false">
+    <!--<ion-content class="padding">
+        <ion-refresher on-refresh="refresh(true)" spinner="android"></ion-refresher>
+        <ion-list>
+            <ion-item item="item">
+                Data goes here
+            </ion-item>
+        </ion-list>
+    </ion-content-->
+    <ion-content class="padding " scroll="false" ng-load="onLoad()">
+        <div class="container text-center" id="container">
+            <div class="row">
+                <img src="images/logo.png" class="logo" alt="logo">
+            </div>
+            <div class="row imgActive">
+                <a ng-click="gotoPlay()" class="homePageImg1 buttonPlay vcenter col-xs-12"><span>Play</span></a>
+            </div>
+            <div class="row imgActive">
+                <a ng-click="gotoRules()" class="homePageImg rulesButton vcenter col-xs-12"><span>Rules</span></a>
+            </div>
+            <div class="row imgActive">
+                <a ng-click="gotoRules()" class="homePageImg languageButton vcenter col-xs-12"><span>Language</span></a>
+            </div>
+           <!-- <div class="row imgActive">
+                <a ng-click="gotoSettings()" href="#/app/setings"  class="homePageImg settingsButton vcenter col-xs-12"></a>
+            </div>-->
+            <div class="row imgActive">
+                <a ng-click="exitFromApp()" href="#i2" class="homePageImg exitButton vcenter col-xs-12"><span>Exit</span></a>
+            </div>
+            <!--<div class="row">
+                <sound-track file="sounds/muzic.mp3" ng-click="togglePlay()" class="soundPlay"></sound-track>
+            </div>-->
+        </div>
+        <div class="bgExit" id="bg_homeExit" ng-show="exitGame">
+            <div class="bgExitDiv">
+                <div class="divTextExit">
+                    <span class="textExit">Do you want to exit?</span>
+                </div>
+                
+                <div class="vcenter centerDiv">
+                    
+                    <a ng-click="exitCancel(1)" class="yesButton">Yes</a>
+                    <a ng-click="exitCancel(0)" class="noButton">No</a>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

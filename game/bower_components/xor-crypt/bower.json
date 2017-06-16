@@ -1,0 +1,21 @@
+{
+  "name": "xor-crypt",
+  "homepage": "http://github.com/robloach/xor-crypt",
+  "description": "XOR Crypt",
+  "version": "1.0.0",
+  "main": "xor-crypt.js",
+  "ignore": [
+    "*.json",
+    "test",
+    "example",
+    ".travis.yml",
+    ".gitignore",
+    "Gruntfile.js",
+    "index.html"
+  ],
+  "keywords": [
+    "encryption"
+  ],
+  "devDependencies": {},
+  "dependencies": {}
+}

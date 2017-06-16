@@ -1,0 +1,31 @@
+﻿<ion-view view-title="Play" data-ng-init="init()" hide-nav-bar="true" can-swipe-back="false">
+    <ion-content class="" scroll="false">
+        <div class="container text-center" id="container" style="padding:0">
+            <div class="row">
+                <img src="images/logo.png" class="logo" alt="logo" style="margin-bottom:10vw">
+            </div>
+            <div class="bg" ng-show="chooseSource">
+                <div class="popupFoto">
+                    <div class="popupFotoDiv">
+                        <div class="divGallery">
+                            <a ng-click="popupPhoto(0)" class="galleryButton vcenter"></a>
+                            <span style="color:#959595">From Gallary</span>
+                        </div>
+                        <div class="divCamera">
+                            <a ng-click="popupPhoto(1)" class="cameraButton vcenter"></a>
+                            <span style="color:#959595">Take a photo</span>
+                        </div>
+                    </div>
+                </div>
+                <a id="closebutton" class="closeButton" ng-click="closePopup()"></a>
+            </div>
+            <img src="{{pic}}" ng-click="myImage()" class="picCamera" id='orgImg' width="300" height="300"/>
+            <div ng-show="showGoButton" class="goButton" ng-click="goButton()">GO</div>
+            
+            
+            <div class="row back" id="back">
+                <a class="backButtton" ng-click="back()"></a>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

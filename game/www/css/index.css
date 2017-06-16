@@ -1,0 +1,668 @@
+@font-face {
+    font-family: galindoRegular; /* ָלÿ רנטפעא */
+    src: url(../fonts/galindoRegular.ttf); /* ֿףעü ך פאיכף סמ רנטפעמל */
+}
+
+body {
+    background-size: 100% !important;
+    position:absolute;
+    z-index:1;
+    font-family: galindoRegular !important;
+}
+#containerLevel{
+    padding: 0 !important;
+}
+.ionBlock .pane{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../images/BG_game.png');
+    background-size: 100% 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 6;
+}
+.vcenter {
+    margin:0 auto;
+}
+.textCenter{
+    text-align:center;
+}
+.logo{
+    width:25vw;
+    height: 25vw;
+    margin: 0 auto;
+    margin-bottom: 5vw;
+    margin-top: 10vw;
+    position:relative;
+    z-index:3;
+}
+.sad{
+    width: 12vw;
+    height: 12vw;
+    margin: 0 auto;
+    margin-bottom: 0vw;
+    margin-top: 17vw;
+    position: relative;
+    z-index: 3;
+}
+.smile{
+    width: 12vw;
+    height: 12vw;
+    margin: 0 auto;
+    margin-bottom: 22vw;
+    margin-top: 22vw;
+    position: relative;
+    z-index: 3;
+}
+.congratulation{
+    color: #fff;
+    font-size: 1em
+}
+.homePageImg{
+    /*width: 65%;*/
+    height: 9vh;
+    line-height: 13vw;
+    margin-left: 17.5vw;
+    margin-top: 5vh;
+}
+.homePageImg1{
+    /*width: 65%;*/
+    height: 9vh;
+    line-height: 13vw;
+    margin-left: 17.5vw;
+    margin-top: 2vh;
+}
+.homePageImgSound{
+    width: 65%;
+    height: 11vh;
+    margin-left: 17.5vw;
+    margin-top: 3vh;
+}
+.imageSoundIcon{
+    width: 9vw;
+}
+.soundImg{
+    background:url(../images/play/sound.png);
+    background-size: 100% 100%;
+    margin-right: 10vw;
+    margin-left: 10vw;
+}
+.soundNoImg{
+    background:url(../images/play/sound-no.png);
+    background-size: 100% 100%;
+    margin-right: 10vw;
+    margin-left: 10vw;
+}
+.imgActive a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 8vw;
+    padding-top: 0.5vw;
+}
+.soundPlay{
+    position: absolute;
+    z-index: 1000000;
+    bottom: 7vw;
+    right: 7vw
+}
+.soundPlaydef{
+    background:url(../images/play/sound.png);
+    background-size: 100% 100%;
+    position: absolute;
+    z-index: 1000000;
+    bottom: 7vw;
+    right: 7vw;
+    width:8vw;
+    height: 8vw;
+}
+.soundButton{
+    background:url(../images/play/music.png);
+    background-size: 100% 100%;
+    position: absolute;
+    z-index: 1000001;
+    bottom: 7vw;
+    right: 20vw;
+    width:9vw;
+    height: 9vw;
+}
+.soundButtonOff{
+    background:url(../images/play/no_music.png);
+    background-size: 100% 100%;
+    position: absolute;
+    z-index: 1000001;
+    bottom: 7vw;
+    right: 20vw;
+    width:9vw;
+    height: 9vw;
+}
+.soundPlayIcon{
+    background:url(../images/play/sound.png);
+    background-size: 100% 100%;
+    position: absolute;
+    z-index: 1000001;
+    bottom: 7vw;
+    right: 7vw;
+    width:8vw;
+    height: 8vw;
+}
+.buttonPlay{
+    background: #fdc689;
+    border-radius: 43px;
+    border: 4px solid #acd373;
+    margin-right: 10vw;
+    margin-left: 10vw;
+    font-family: galindoRegular;
+}
+/*.buttonPlay:active {
+    background:url(../images/homeButton/active/buttonPlayActive.png);
+    background-size: 100% 100%;
+    margin-right: 10vw;
+    margin-left: 10vw;
+}*/
+.settingsButton {
+    background:url(../images/homeButton/settingsButton.png);
+    background-size: 100% 100%;
+    margin-right: 10vw;
+    margin-left: 10vw;
+}
+.settingsButton:active {
+    background:url(../images/homeButton/active/settingsButtonActive.png);
+    background-size: 100% 100%;
+    margin-right: 10vw;
+    margin-left: 10vw;
+}
+.rulesButton {
+    background: #ffa542;
+    border-radius: 43px;
+    border: 4px solid #acd373;
+    margin-right: 10vw;
+    margin-left: 10vw;
+}
+.languageButton{
+    background: #ff8500;
+    border-radius: 43px;
+    border: 4px solid #acd373;
+    margin-right: 10vw;
+    margin-left: 10vw;
+}
+/*.rulesButton:active {
+    background:url(../images/homeButton/active/rulesButtonActive.png);
+    background-size: 100% 100%;
+    margin-right: 10vw;
+    margin-left: 10vw;
+}*/
+.exitButton {
+    background: #d65b00;
+    border-radius: 43px;
+    border: 4px solid #acd373;
+    margin-right: 10vw;
+    margin-left: 10vw;
+}
+/*.exitButton:active  {
+    background:url(../images/homeButton/active/buttonExitActive.png);
+    background-size: 100% 100%;
+    margin-right: 10vw;
+    margin-left: 10vw;
+}*/
+.bgExit {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(15,15,15,0.5);
+}
+.bgExitDiv {
+    margin: 70vw auto;
+   /* background: url('../images/exit/bgss.png');
+    background-size: 100% 100%;*/
+    background: #fff;
+    border: 4px solid #acd373;
+    border-radius: 20px;
+    width: 83vw;
+    height: 43vw;
+}
+.divTextExit{
+    width:100%;
+    text-align: center;
+    margin-top: 4vw;
+}
+.textExit{
+    color: #959595;
+    font-size: 6vw
+}
+.yesButton {
+   /* background: url('../images/exit/x.png');
+    background-size: 100% 100%;*/
+    background-color: #fdc689;
+    border: 4px solid #acd373;
+    border-radius: 20px;
+    text-decoration: none !important;
+    color: #fff !important;
+    width: 25vw;
+    height: 12vw;
+    line-height: 9vw;
+    position: absolute;
+    text-align:center;
+    font-size: 20px;
+    padding-top: 0.5vw;
+}
+/*.yesButton:active {
+    background-image: url('../images/exit/active/activ1.png');
+    background-size: 100% 100%;
+    width: 21vw;
+    height: 12vw;
+    position: absolute;
+}*/
+.noButton {
+    /*background: url('../images/exit/NO.png');
+    background-size: 100% 100%;*/
+    width: 25vw;
+    height: 12vw;
+    line-height: 9vw;
+    position: relative;
+    float:right;
+    background-color: #d65b00;
+    border: 4px solid #acd373;
+    border-radius: 20px;
+    text-decoration: none !important;
+    color: #fff !important;
+    text-align:center;
+    font-size: 20px;
+    padding-top: 0.5vw;
+}
+/*.noButton:active {
+    background-image: url('../images/exit/active/activ2.png');
+    background-size: 100% 100%;
+    width: 21vw;
+    height: 12vw;
+    position: relative;
+    float: right;
+}*/
+.centerDiv{
+    width: 57vw;
+    height: 15vw;
+    padding-top: 11vw;
+}
+.back{
+    position:absolute;
+    bottom:7vw;
+    left:7vw;
+}
+#back {
+    width: 9vw;
+    padding: 0;
+    margin: 0;
+   /* margin-left: 10vw;
+    margin-bottom: 10vw;*/
+}
+.backButtton {
+    background-image: url('../images/backButton.png');
+    background-size: 100% 100%;
+    height:9vw;
+    width:9vw;
+}
+.backRules{
+    position:absolute;
+    bottom:0;
+    right:0;
+}
+#backRules {
+    width: 10vw;
+    margin-right: 10vw;
+    margin-bottom: 10vw;
+}
+.image{
+    /*width:29vw*/
+    padding:0 !important;
+    margin:0 !important;
+}
+/*level*/
+.levelDiv{
+    width:20vw;
+    height:20vw;
+    background-color:#fdc689;
+    border: 4px solid #acd373;
+    border-radius: 15px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 24vw;
+   /* margin: 3vw 3.5vw;*/
+    font-size: 10vw;
+    float:left;
+    color: #fff;
+}
+.lockDiv{
+    background-color:#959595;
+    border: 4px solid #b7b7b7;
+    position: relative;
+}
+.lock{
+    width: 5.4vw;
+    height: 5.4vw;
+    margin-top: -1.1vw;
+    margin-left: -2vw;
+    /*position:absolute;
+    z-index:500*/
+}
+.starLevel{
+    width: 2vw;
+    height: 2vw;
+    margin-top: 2vw;
+    margin-left: 1vw;
+    position:absolute;
+    z-index:500
+}
+.lockLevel{
+    width: 3vw;
+    height: 3vw;
+    left: 40%;
+    margin-top: 2vw;
+    position:absolute;
+    z-index:500
+}
+.lockHard{
+   /* margin-left: 4vw;*/
+}
+.starCountText{
+    font-size: 0.5em;
+    margin-top: 7px;
+}
+.mainDivLevel{
+    width: 96vw;
+    margin: 0 auto;
+}
+
+/*preview*/
+.preview{
+    width:100vw;
+    height:100vh;
+    position:absolute;
+    z-index: 1000;
+    background: url('../images/BG_game.png');
+    text-align: center;
+}
+.preview img{
+    
+}
+.textTimerPre{
+    font-size:2.5em; 
+    color:#fff;
+}
+.importantImgPreDiv{
+    border: 4px solid #acd373;
+    border-radius: 27px;
+    padding: 1vw;
+    width:80vw;
+    height:80vw;
+    margin: 0 auto;
+    vertical-align: middle;
+    line-height: 76vw;
+    margin-bottom: 13vw;
+}
+.importantImgPre{
+    width: 65vw;
+    height: 65vw;
+    border-radius: 27px;
+}
+.good{
+    width:100vw;
+    height:100vh;
+    position:absolute;
+    z-index: 1000;
+    background: url('../images/BG_game.png');
+    text-align: center;
+}
+.good h1{
+    color: #fff;
+}
+.timer0{
+    font-size: 23px;
+    margin-bottom: 20vw;
+}
+.specularNo{
+    width:100vw;
+    height:100vh;
+    position:absolute;
+    z-index: 1000;
+    background-color:green;
+    text-align: center;
+}
+.specularNo h1{
+    color:red;
+}
+.nextDiv{
+    width: 55vw;
+    height: 12vw;
+    background-color: #d65b00;
+    border-radius: 43px;
+    border: 4px solid #acd373;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 23px;
+}
+.showImg{
+    width: 55vw;
+    height: 13vw;
+    line-height: 10vw;
+    font-size: 1.5em;
+    color: #fff;
+    background-color: #d65b00;
+    border-radius: 15px;
+    border: 4px solid #acd373;
+    vertical-align: middle;
+    line-height: 10vw;
+    margin-top: 8vw;
+}
+.complexityDiv{
+    width: 55vw;
+    height: 13vw;
+    line-height: 12vw;
+    font-size: 1.5em;
+    color: #fff;
+    background-color: #fdc689;
+    border-radius: 43px;
+    border: 4px solid #acd373;
+    vertical-align: middle;
+    
+    margin-top: 8vw;
+}
+.complexityDivNH{
+    width: 55vw;
+    height: 13vw;
+    font-size: 1.5em;
+
+    color: #fff;
+    background-color: #959595;
+    border-radius: 43px;
+    border: 4px solid #b7b7b7;
+    vertical-align: middle;
+    line-height: 12vw;
+    margin-top: 8vw;
+}
+#hardOpen{
+    background-color: #ff8500;
+    border: 4px solid #acd373;
+}
+#normalOpen{
+    background-color: #ffa542;
+    border: 4px solid #acd373;
+}
+.specular{
+    width:15vw;
+    margin-top: 8vw;
+}
+.rotateButton{
+    width:12vw;
+    margin-top: 8vw;
+}
+.defOrMyDiv{
+    width: 60vw;
+    height: 14vw;
+    vertical-align: middle;
+    line-height: 11vw;
+}
+.defOrMyDiv p{
+    line-height: 12vw;
+    margin: 0;
+}
+.defButton{
+    border-radius: 43px;
+    border: 4px solid #acd373;
+    background-color: #fdc689;
+    margin-top: 16vh;
+    font-size: 1.5em;
+    color: #fff;
+}
+.myButton{
+    border-radius: 43px;
+    border: 4px solid #acd373;
+    background-color: #ffa542;
+    margin-top: 5vh;
+    font-size: 1.5em;
+    color: #fff;
+}
+.bg {
+    position: absolute;
+    z-index: 55;
+    top: 0px;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(15,15,15,0.5);
+}
+.popupFoto {
+    background-color: #fff;
+    /*background-size: 100% 100%;*/
+    width: 83%;
+    height: 47vw;
+    margin: 59vw auto;
+    border: 4px solid #acd373;
+    border-radius: 15px;
+}
+.popupFotoDiv{
+    margin: 0 auto;
+    width: 64vw;
+    height: 25vw;
+    padding-top: 13vw;
+}
+.cameraButton {
+    background: url('../images/fotoPopup/camera.png');
+    background-size: 100% 100%;
+    width: 15vw;
+    height: 15vw;
+    display: block;
+    margin-bottom: 2vw;
+    vertical-align: middle;
+}
+.galleryButton {
+    background: url('../images/fotoPopup/gallery.png');
+    background-size: 100% 100%;
+    width: 15vw;
+    height: 15vw;
+    display: block;
+    margin-bottom: 2vw;
+    vertical-align: middle;
+}
+.divGallery, .divCamera{
+    width: 32vw;
+    float: left;
+}
+
+#closebutton{
+    position: absolute;
+    z-index: 1;
+    top: 64vw;
+    right: 14vw;
+    width: 3vw;
+    height: 3vw;
+}
+.closeButton {
+    background: url('../images/fotoPopup/xButton.png');
+    background-size: 100% 100%;
+}
+.picCamera{
+    width:80vw; 
+    height:80vw
+}
+/*#orgImg{
+    width: 300px;
+    height: 300px;
+}*/
+.scrolDiv{
+    width: 96vw;
+    margin-left: 2vw;
+    height: 91vw;
+    background: url(../images/bg2.png);
+    background-size: 100% 100%;
+}
+.scrolDiv2{
+    width: 96vw;
+    height: 92vw;
+    padding-top: 1.7vw;
+}
+.scrolSize{
+    width: 96vw;
+    height: 88.5vw;
+    padding-top: 4vw;
+}
+.loadingSpiner {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../images/BG_game.png');
+    background-size: 100% 100%;
+    vertical-align: middle;
+    display: table-cell;
+    position: absolute;
+    z-index: 1000000000000;
+    top: 0;
+}
+.loadingLogo{
+    width: 50vw;
+    height: 50vw;
+    position: absolute;
+    left: 25vw;
+    top: 25vh;
+}
+.goButton{
+    background-color: #d65b00;
+    border: 4px solid #acd373;
+    border-radius: 20px;
+    margin: 0 auto;
+    width: 27vw;
+    line-height: 10vw;
+    height: 11vw;
+    color: #fff;
+    font-size: 6vw;
+    margin-top: 10vw;
+}
+.timerGame{
+    color: #fff;
+    font-size: 1.5em;
+    position: absolute;
+    top: 18vw;
+    left: 3vw;
+    width: 14vw;
+    height: 14vw;
+    
+    border-radius: 43px;
+    border: 3px solid #acd373;
+}
+.timerGame span{
+    margin: 0 auto;
+    line-height: 10vw;
+    width: 14vw;
+}
+#gameTimerRed{
+    color:red;
+}
+.scrolIconDiv{
+    width: 100vw;
+}
+.scrolIcon{
+    margin: 10vw auto;
+    width: 15vw;
+    height: 15vw;
+}
